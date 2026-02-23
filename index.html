@@ -66,18 +66,35 @@
         <section class="py-24">
             <div class="bg-gray-50 border-l-4 border-slate-900 p-10 sm:p-14 shadow-sm">
                 <h2 class="text-xl font-bold text-gray-900 mb-10 tracking-tight">89-Day Empirical Backtest – EE Bidding Zone</h2>
-                <div class="grid grid-cols-1 lg:grid-cols-3 gap-12 items-center">
-                    <ul class="col-span-2 space-y-4 text-sm text-gray-700 font-light premium-line-height">
-                        <li><strong class="font-semibold text-gray-900">Load Specs:</strong> Industrial baseline consumption</li>
-                        <li><strong class="font-semibold text-gray-900">Constraints:</strong> Shift-based, consecutive-hour minimums</li>
-                        <li><strong class="font-semibold text-gray-900">Date Range:</strong> Trailing 89-day Nord Pool settlement period</li>
-                        <li><strong class="font-semibold text-gray-900">Baseline Cost:</strong> Unoptimised, static operational schedule</li>
-                        <li><strong class="font-semibold text-gray-900">Optimised Cost:</strong> Algorithmically scheduled dynamic load</li>
-                    </ul>
-                    <div class="col-span-1 lg:text-right border-t lg:border-t-0 lg:border-l border-gray-200 pt-8 lg:pt-0 lg:pl-8">
-                        <p class="text-xs font-bold text-slate-500 uppercase tracking-widest mb-2">Reduction</p>
-                        <p class="text-7xl font-bold text-slate-900 tracking-tighter">6.6%</p>
+                
+                <div class="mb-12 border-b border-gray-200 pb-10">
+                    <p class="text-6xl sm:text-7xl font-bold text-slate-900 tracking-tighter mb-2">€38,620</p>
+                    <p class="text-sm font-semibold text-slate-500 uppercase tracking-widest">Total Savings (89 Days)</p>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-y-8 gap-x-12 mb-10">
+                    <div>
+                        <p class="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-1">Baseline Cost</p>
+                        <p class="text-xl font-medium text-gray-900">€589,078.91</p>
                     </div>
+                    <div>
+                        <p class="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-1">Optimised Cost</p>
+                        <p class="text-xl font-medium text-gray-900">€550,458.67</p>
+                    </div>
+                    <div>
+                        <p class="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-1">Reduction</p>
+                        <p class="text-xl font-medium text-gray-900">6.6%</p>
+                    </div>
+                    <div>
+                        <p class="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-1">Average Daily Savings</p>
+                        <p class="text-xl font-medium text-gray-900">€433.94</p>
+                    </div>
+                </div>
+
+                <div class="pt-6 border-t border-gray-200">
+                    <p class="text-sm text-slate-600 font-light">
+                        Simulation constrained to standard day-shift operation (06:00–18:00).
+                    </p>
                 </div>
             </div>
         </section>
@@ -101,164 +118,6 @@
             <p class="text-base font-semibold text-gray-900 mb-1">Zulfikar Haider</p>
             <p class="text-sm text-gray-500 font-light mb-4">Founder, NordGrid Analytics</p>
             <a href="mailto:zulfikar@nordgridanalytics.com" class="text-sm font-medium text-slate-800 hover:text-black hover:underline underline-offset-4 transition-all">zulfikar@nordgridanalytics.com</a>
-        </footer>
-
-    </div>
-
-</body>
-</html>                Request Overview
-            </a>
-        </section>
-
-        <section class="py-24">
-            <h2 class="text-sm font-bold tracking-widest text-slate-400 uppercase mb-10">Industrial Exposure in Volatile Day-Ahead Markets</h2>
-            <div class="text-lg text-gray-700 font-light premium-line-height space-y-8 max-w-3xl">
-                <p>
-                    Fixed operational schedules in energy-intensive facilities create unmanaged exposure to Nord Pool day-ahead price volatility.
-                </p>
-                <p>
-                    Traditional shift-based runtimes force baseline consumption during peak pricing hours, resulting in structural cost inefficiencies and reduced margin control. The inability to dynamically adjust load in response to hourly price fluctuations creates an invisible, compounding operational tax.
-                </p>
-            </div>
-        </section>
-
-        <section class="py-24 border-t border-gray-200">
-            <h2 class="text-2xl font-semibold text-gray-900 mb-12 tracking-tight">Deterministic Optimisation Framework</h2>
-            <div class="max-w-2xl">
-                <ul class="space-y-6 text-gray-700 font-light premium-line-height list-none">
-                    <li class="relative pl-6 before:content-[''] before:absolute before:left-0 before:top-[12px] before:w-1.5 before:h-1.5 before:bg-slate-400 before:rounded-sm">Load segmentation modelling</li>
-                    <li class="relative pl-6 before:content-[''] before:absolute before:left-0 before:top-[12px] before:w-1.5 before:h-1.5 before:bg-slate-400 before:rounded-sm">Runtime constraint mapping</li>
-                    <li class="relative pl-6 before:content-[''] before:absolute before:left-0 before:top-[12px] before:w-1.5 before:h-1.5 before:bg-slate-400 before:rounded-sm">Day-ahead price integration</li>
-                    <li class="relative pl-6 before:content-[''] before:absolute before:left-0 before:top-[12px] before:w-1.5 before:h-1.5 before:bg-slate-400 before:rounded-sm">Consecutive-hour optimisation logic</li>
-                    <li class="relative pl-6 before:content-[''] before:absolute before:left-0 before:top-[12px] before:w-1.5 before:h-1.5 before:bg-slate-400 before:rounded-sm">Backtesting capability</li>
-                </ul>
-            </div>
-        </section>
-
-        <section class="py-24">
-            <div class="bg-gray-50 border-l-4 border-slate-900 p-10 sm:p-14 shadow-sm">
-                <h2 class="text-xl font-bold text-gray-900 mb-10 tracking-tight">89-Day Empirical Backtest – EE Bidding Zone</h2>
-                <div class="grid grid-cols-1 lg:grid-cols-3 gap-12 items-center">
-                    <ul class="col-span-2 space-y-4 text-sm text-gray-700 font-light premium-line-height">
-                        <li><strong class="font-semibold text-gray-900">Load Specs:</strong> Industrial baseline consumption</li>
-                        <li><strong class="font-semibold text-gray-900">Constraints:</strong> Shift-based, consecutive-hour minimums</li>
-                        <li><strong class="font-semibold text-gray-900">Date Range:</strong> Trailing 89-day Nord Pool settlement period</li>
-                        <li><strong class="font-semibold text-gray-900">Baseline Cost:</strong> Unoptimised, static operational schedule</li>
-                        <li><strong class="font-semibold text-gray-900">Optimised Cost:</strong> Algorithmically scheduled dynamic load</li>
-                    </ul>
-                    <div class="col-span-1 lg:text-right border-t lg:border-t-0 lg:border-l border-gray-200 pt-8 lg:pt-0 lg:pl-8">
-                        <p class="text-xs font-bold text-slate-500 uppercase tracking-widest mb-2">Reduction</p>
-                        <p class="text-7xl font-bold text-slate-900 tracking-tighter">6.6%</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="py-24 border-t border-gray-200">
-            <h2 class="text-2xl font-semibold text-gray-900 mb-12 tracking-tight">Engagement Structure</h2>
-            <div class="max-w-2xl">
-                <ol class="space-y-6 text-gray-700 font-light premium-line-height list-decimal pl-6 marker:text-slate-900 marker:font-semibold">
-                    <li class="pl-4">Facility constraint mapping</li>
-                    <li class="pl-4">Historical exposure modelling</li>
-                    <li class="pl-4">Schedule generation</li>
-                    <li class="pl-4">Reporting</li>
-                </ol>
-                <div class="mt-12 p-6 bg-slate-50 border border-slate-100 rounded-sm inline-block">
-                    <p class="text-sm font-semibold text-slate-900 tracking-wide">No infrastructure integration required.</p>
-                </div>
-            </div>
-        </section>
-
-        <footer class="pt-16 pb-24 border-t border-gray-200">
-            <p class="text-base font-semibold text-gray-900 mb-1">Zulfikar Haider</p>
-            <p class="text-sm text-gray-500 font-light mb-4">Founder, NordGrid Analytics</p>
-            <a href="mailto:zulfikar@nordgridanalytics.com" class="text-sm font-medium text-slate-800 hover:text-black hover:underline underline-offset-4 transition-all">zulfikar@nordgridanalytics.com</a>
-        </footer>
-
-    </div>
-
-</body>
-</html>            <a href="mailto:Zulfikar@nordgridanalytics.com" class="inline-flex items-center justify-center px-8 py-4 text-sm font-semibold tracking-wide text-white bg-slate-900 hover:bg-black transition-colors">
-                Request Overview
-            </a>
-        </section>
-
-        <section class="py-24">
-            <h2 class="text-sm font-bold tracking-widest text-slate-400 uppercase mb-10">Industrial Exposure in Volatile Day-Ahead Markets</h2>
-            <div class="text-lg text-gray-700 font-light premium-line-height space-y-8 max-w-3xl">
-                <p>
-                    Fixed operational schedules in energy-intensive facilities create unmanaged exposure to Nord Pool day-ahead price volatility.
-                </p>
-                <p>
-                    Traditional shift-based runtimes force baseline consumption during peak pricing hours, resulting in structural cost inefficiencies and reduced margin control. The inability to dynamically adjust load in response to hourly price fluctuations creates an invisible, compounding operational tax.
-                </p>
-            </div>
-        </section>
-
-        <section class="py-24 border-t border-gray-200">
-            <h2 class="text-2xl font-semibold text-gray-900 mb-12 tracking-tight">Deterministic Optimisation Framework</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-start">
-                
-                <ul class="space-y-6 text-gray-700 font-light premium-line-height list-none">
-                    <li class="relative pl-6 before:content-[''] before:absolute before:left-0 before:top-[12px] before:w-1.5 before:h-1.5 before:bg-slate-400 before:rounded-sm">Load segmentation modelling</li>
-                    <li class="relative pl-6 before:content-[''] before:absolute before:left-0 before:top-[12px] before:w-1.5 before:h-1.5 before:bg-slate-400 before:rounded-sm">Runtime constraint mapping</li>
-                    <li class="relative pl-6 before:content-[''] before:absolute before:left-0 before:top-[12px] before:w-1.5 before:h-1.5 before:bg-slate-400 before:rounded-sm">Day-ahead price integration</li>
-                    <li class="relative pl-6 before:content-[''] before:absolute before:left-0 before:top-[12px] before:w-1.5 before:h-1.5 before:bg-slate-400 before:rounded-sm">Consecutive-hour optimisation logic</li>
-                    <li class="relative pl-6 before:content-[''] before:absolute before:left-0 before:top-[12px] before:w-1.5 before:h-1.5 before:bg-slate-400 before:rounded-sm">Backtesting capability</li>
-                </ul>
-                
-                <div class="bg-gray-50 border border-gray-200 p-8 h-full min-h-[200px] flex flex-col justify-between">
-                    <div class="w-full h-1 bg-gray-200 mb-6"></div>
-                    <div class="w-3/4 h-1 bg-slate-800 mb-6"></div>
-                    <div class="w-5/6 h-1 bg-gray-300 mb-6"></div>
-                    <div class="w-1/2 h-1 bg-gray-200"></div>
-                </div>
-            </div>
-        </section>
-
-        <section class="py-24">
-            <div class="bg-gray-50 border-l-4 border-slate-900 p-10 sm:p-14 shadow-sm">
-                <h2 class="text-xl font-bold text-gray-900 mb-10 tracking-tight">89-Day Empirical Backtest – EE Bidding Zone</h2>
-                <div class="grid grid-cols-1 lg:grid-cols-3 gap-12 items-center">
-                    <ul class="col-span-2 space-y-4 text-sm text-gray-700 font-light premium-line-height">
-                        <li><strong class="font-semibold text-gray-900">Load Specs:</strong> Industrial baseline consumption</li>
-                        <li><strong class="font-semibold text-gray-900">Constraints:</strong> Shift-based, consecutive-hour minimums</li>
-                        <li><strong class="font-semibold text-gray-900">Date Range:</strong> Trailing 89-day Nord Pool settlement period</li>
-                        <li><strong class="font-semibold text-gray-900">Baseline Cost:</strong> Unoptimised, static operational schedule</li>
-                        <li><strong class="font-semibold text-gray-900">Optimised Cost:</strong> Algorithmically scheduled dynamic load</li>
-                    </ul>
-                    <div class="col-span-1 lg:text-right border-t lg:border-t-0 lg:border-l border-gray-200 pt-8 lg:pt-0 lg:pl-8">
-                        <p class="text-xs font-bold text-slate-500 uppercase tracking-widest mb-2">Reduction</p>
-                        <p class="text-7xl font-bold text-slate-900 tracking-tighter">6.6%</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="py-24 border-t border-gray-200">
-            <h2 class="text-2xl font-semibold text-gray-900 mb-12 tracking-tight">Engagement Structure</h2>
-            <div class="max-w-2xl">
-                <ol class="space-y-6 text-gray-700 font-light premium-line-height list-decimal pl-6 marker:text-slate-900 marker:font-semibold">
-                    <li class="pl-4">Facility constraint mapping</li>
-                    <li class="pl-4">Historical exposure modelling</li>
-                    <li class="pl-4">Schedule generation</li>
-                    <li class="pl-4">Reporting</li>
-                </ol>
-                <div class="mt-12 p-6 bg-slate-50 border border-slate-100 rounded-sm inline-block">
-                    <p class="text-sm font-semibold text-slate-900 tracking-wide">No infrastructure integration required.</p>
-                </div>
-            </div>
-        </section>
-
-        <footer class="pt-16 pb-24 border-t border-gray-200 flex flex-col sm:flex-row justify-between items-start sm:items-end gap-8">
-            <div>
-                <p class="text-base font-semibold text-gray-900 mb-1">Zulfikar Haider</p>
-                <p class="text-sm text-gray-500 font-light mb-4">Founder | NordGrid Analytics</p>
-                <a href="mailto:Zulfikar@nordgridanalytics.com" class="text-sm font-medium text-slate-800 hover:text-black hover:underline underline-offset-4 transition-all">Zulfikar@nordgridanalytics.com</a>
-            </div>
-            <div>
-                <p class="text-xs font-medium text-gray-400 uppercase tracking-widest">Independent optimisation practice.</p>
-            </div>
         </footer>
 
     </div>
