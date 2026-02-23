@@ -1,67 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>NordGrid Analytics</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<style>
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 40px;
-    background: #ffffff;
-    color: #111;
-    max-width: 800px;
-}
-h1 { font-size: 28px; margin-bottom: 10px; }
-h2 { margin-top: 40px; }
-p { line-height: 1.6; }
-ul { line-height: 1.6; }
-.section { margin-bottom: 30px; }
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NordGrid Analytics | Industrial Load Optimisation</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+    </style>
 </head>
-<body>
+<body class="bg-white text-gray-900 selection:bg-slate-800 selection:text-white">
 
-<h1>NordGrid Analytics</h1>
-<p><strong>Constrained Day-Ahead Industrial Load Optimisation</strong><br>
-Nord Pool Markets</p>
+    <div class="max-w-4xl mx-auto px-6 lg:px-8">
 
-<div class="section">
-<h2>What We Do</h2>
-<p>NordGrid Analytics develops deterministic optimisation models that reduce electricity procurement cost for shift-based industrial facilities operating within Nord Pool markets.</p>
+        <section class="py-24 md:py-32 border-b border-gray-100">
+            <h1 class="text-3xl md:text-5xl font-semibold tracking-tight text-gray-900 mb-6">NordGrid Analytics</h1>
+            <p class="text-xl md:text-2xl text-gray-600 font-light max-w-2xl mb-12 leading-snug">
+                Industrial Load Optimisation for Nord Pool Day-Ahead Markets. <br class="hidden md:block mt-2">
+                Minimising exposure to volatile energy pricing through deterministic scheduling.
+            </p>
+            <a href="mailto:Zulfikar@nordgridanalytics.com" class="inline-block border border-gray-900 text-gray-900 px-7 py-3 text-sm font-medium hover:bg-gray-900 hover:text-white transition-colors duration-200">
+                Request Overview
+            </a>
+        </section>
 
-<ul>
-<li>Models operational constraints (runtime, shift windows, flexible vs fixed load)</li>
-<li>Optimises day-ahead scheduling under real market pricing</li>
-<li>Quantifies baseline vs optimised cost over historical periods</li>
-<li>No infrastructure integration required</li>
-</ul>
-</div>
+        <section class="py-20">
+            <h2 class="text-xs font-semibold tracking-widest text-gray-500 uppercase mb-8">Industrial Exposure in Volatile Day-Ahead Markets</h2>
+            <div class="text-lg text-gray-600 font-light max-w-3xl space-y-6 leading-relaxed">
+                <p>
+                    Fixed operational schedules in energy-intensive facilities create unmanaged exposure to Nord Pool day-ahead price volatility.
+                </p>
+                <p>
+                    Traditional shift-based runtimes force baseline consumption during peak pricing hours, resulting in structural cost inefficiencies and reduced margin control. The inability to dynamically adjust load in response to hourly price fluctuations creates an invisible, compounding operational tax.
+                </p>
+            </div>
+        </section>
 
-<div class="section">
-<h2>89-Day EE Zone Backtest</h2>
-<p><strong>Simulated Industrial Unit:</strong></p>
-<ul>
-<li>Total Load: 5 MW (3 MW flexible)</li>
-<li>8-hour consecutive runtime</li>
-<li>Operational window: 06:00–18:00</li>
-</ul>
+        <section class="py-20 border-t border-gray-100">
+            <h2 class="text-xl font-medium text-gray-900 mb-10">Deterministic Optimisation Framework</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+                <ul class="space-y-4 text-gray-600 font-light list-disc pl-5 marker:text-gray-300">
+                    <li>Load segmentation modelling</li>
+                    <li>Runtime constraint mapping</li>
+                    <li>Day-ahead price integration</li>
+                    <li>Consecutive-hour optimisation logic</li>
+                    <li>Backtesting capability</li>
+                </ul>
+                
+                <div class="bg-gray-50 p-8 border border-gray-100 flex flex-col gap-3 h-full justify-center">
+                    <div class="h-6 bg-gray-200 w-3/4 rounded-sm"></div>
+                    <div class="h-6 bg-slate-800 w-full rounded-sm"></div>
+                    <div class="h-6 bg-gray-200 w-5/6 rounded-sm"></div>
+                    <div class="h-6 bg-gray-300 w-1/2 rounded-sm"></div>
+                </div>
+            </div>
+        </section>
 
-<p><strong>Results (89 days, real grid data):</strong></p>
-<ul>
-<li>Baseline Cost: €589,078.91</li>
-<li>Optimised Cost: €550,458.67</li>
-<li>Reduction: 6.6%</li>
-<li>Total Savings: €38,620.25</li>
-</ul>
-</div>
+        <section class="py-16 my-8 bg-[#F8F9FA] border border-gray-200 px-8 md:px-12">
+            <h2 class="text-lg font-semibold text-gray-900 mb-8 border-b border-gray-200 pb-4">89-Day Empirical Backtest – EE Bidding Zone</h2>
+            <div class="flex flex-col md:flex-row justify-between gap-12">
+                <ul class="space-y-3 text-sm text-gray-600 font-light flex-1 leading-relaxed">
+                    <li><strong class="font-medium text-gray-900">Load Specs:</strong> Industrial baseline consumption</li>
+                    <li><strong class="font-medium text-gray-900">Constraints:</strong> Shift-based, consecutive-hour minimums</li>
+                    <li><strong class="font-medium text-gray-900">Date Range:</strong> Trailing 89-day Nord Pool settlement period</li>
+                    <li><strong class="font-medium text-gray-900">Baseline Cost:</strong> Unoptimised, static operational schedule</li>
+                    <li><strong class="font-medium text-gray-900">Optimised Cost:</strong> Algorithmically scheduled dynamic load</li>
+                </ul>
+                <div class="flex flex-col justify-center items-start md:items-end">
+                    <span class="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-1">Reduction</span>
+                    <span class="text-7xl font-light text-slate-800 tracking-tighter">6.6%</span>
+                </div>
+            </div>
+        </section>
 
-<div class="section">
-<h2>Engagement Model</h2>
-<ul>
-<li>30–60 day pilot modelling</li>
-<li>Facility-specific constraint calibration</li>
-<li>No SCADA integration required</li>
+        <section class="py-20 border-t border-gray-100">
+            <h2 class="text-xl font-medium text-gray-900 mb-10">Engagement Structure</h2>
+            <ol class="space-y-5 text-gray-600 font-light list-decimal pl-5 marker:text-gray-900 marker:font-medium">
+                <li class="pl-3">Facility constraint mapping</li>
+                <li class="pl-3">Historical exposure modelling</li>
+                <li class="pl-3">Schedule generation</li>
+                <li class="pl-3">Reporting</li>
+            </ol>
+            <p class="mt-10 text-sm font-medium text-slate-800">
+                No infrastructure integration required.
+            </p>
+        </section>
+
+        <footer class="py-12 border-t border-gray-100 text-sm font-light text-gray-500 flex flex-col md:flex-row justify-between items-start md:items-center gap-6">
+            <div>
+                <p class="font-medium text-gray-900 mb-1">Zulfikar Haider</p>
+                <p class="mb-1">Founder | NordGrid Analytics</p>
+                <a href="mailto:Zulfikar@nordgridanalytics.com" class="text-slate-800 hover:text-black transition-colors font-medium">Zulfikar@nordgridanalytics.com</a>
+            </div>
+            <div class="text-left md:text-right">
+                <p>Independent optimisation practice.</p>
+            </div>
+        </footer>
+
+    </div>
+
+</body>
+</html><li>No SCADA integration required</li>
 </ul>
 </div>
 
